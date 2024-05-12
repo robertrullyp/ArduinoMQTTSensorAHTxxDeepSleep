@@ -19,7 +19,14 @@ Buat Wiringnya gini :
 
 ![Capture2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/e8d306b6-93ad-4c8d-920c-a396d90eb281)
 
+jadinya kira" gini sebelum masuk case 3d print :
 
+![photo_2024-05-12_14-48-42](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/4401051e-c555-4c1e-ae8a-24bbe9a0a27d)
+
+
+## 3D Print Case Model
+
+Update Soon....
 
 ## Library
 
@@ -77,10 +84,6 @@ buat topic availabilitynya kalau ada di [PubTopic]/status payloadnya akan ngirim
 
 
 ## Demo
-
-Update Soon....
-
-## 3D Print Case Model
 
 Update Soon....
 
