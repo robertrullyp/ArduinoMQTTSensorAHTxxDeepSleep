@@ -26,7 +26,7 @@ jadinya kira" gini sebelum masuk case 3d print :
 
 ## 3D Print Case Model
 
-Update Soon....
+Lagi di design, Update Soon....
 
 ## Library
 
