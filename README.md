@@ -7,10 +7,20 @@ cek sketch arduinonya disini [Arduino MQTT Sensor](https://github.com/robertrull
 ## Device Components & Wiring
 
 - ESP-01s
+
+![ESP-01s](https://www.makerstore.com.au/wp-content/uploads/2017/09/ELEC-ESP01S-01-324x324.jpg)
 - USB Adapter for ESP-01
+![ESP-01 with USB Adapter](https://m.media-amazon.com/images/I/61bh6KPmE+L._AC_UF894,1000_QL80_.jpg)
 - Sensor Suhu & Kelembaban (AHT10)
 
-Buat Wiringnya segera diupdate......
+![AHT10](https://ezmation.com/101-medium_default/aht10-temperature-and-humidity-sensor-i2c.jpg)
+
+Buat Wiringnya gini : 
+
+![Capture2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/e8d306b6-93ad-4c8d-920c-a396d90eb281)
+
+
+
 ## Library
 
 Buat library tambahan yang perlu diinstal :
@@ -68,7 +78,12 @@ buat topic availabilitynya kalau ada di [PubTopic]/status payloadnya akan ngirim
 
 ## Demo
 
-Posted Soon....
+Update Soon....
+
+## 3D Print Case Model
+
+Update Soon....
+
 ## Authors
 
 - [Robert Rully Pernando](https://github.com/robertrullyp)
