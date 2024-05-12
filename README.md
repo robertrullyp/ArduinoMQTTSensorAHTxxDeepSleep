@@ -3,7 +3,7 @@
 
 Didesign buat jadi sensor Temperature & Humidity yang memungkinkan buat rechargeable atau dipakein powerbank dengan mengimplemtasi fitur deep sleep di mcu esp dan dapat diintegrasi dengan dashboard home automation Home Assistant.
 
-cek sketch arduinonya disini [Arduino MQTT Sensor]()
+cek sketch arduinonya disini [Arduino MQTT Sensor](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/blob/main/src/main.cpp)
 ## Device Components & Wiring
 
 - ESP-01s
@@ -63,7 +63,9 @@ kalau parameter deep sleep yang lagi running di device nanti ada di topic:
 
 buat topic availabilitynya kalau ada di [PubTopic]/status payloadnya akan ngirim status perangkat online/offline jadi kalau lagi di beroperasi device bakalan ngirim status online, ketika offline artinya device lagi deep sleep atau mungkin device kehilangan koneksi kalau lebih dari interval yang tentukan.
 
-detailnya diupdate lagi nanti....
+![Capture](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/bc355c2a-be5a-4b66-8620-9dc19ea86a47)
+
+
 ## Demo
 
 Posted Soon....
