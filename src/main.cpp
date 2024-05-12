@@ -15,9 +15,9 @@
 #endif
 
 unsigned long long LastPublishMillis = 0;
-const long publishinterval = 3000;
+const long publishinterval = 1000;
 unsigned long long LastSleepMillis = 0;
-unsigned long long sleepinterval = 5;
+unsigned long long sleepinterval = 2;
 unsigned int sleeptime = 60;
 bool sleepmode = true;
 
@@ -93,7 +93,7 @@ void callback(char* topic, byte* message, unsigned int length) {
     Serial.println(sleepmode);
   }
   if (String(topic) == (SubTopic + "/sleepinterval")) {
-    if (messageTemp.toInt() <= 5 ) sleepinterval = 5;
+    if (messageTemp.toInt() <= 1 ) sleepinterval = 1;
     else sleepinterval = messageTemp.toInt();
     Serial.print(F("Sleep Interval Set to : "));
     Serial.print(sleepinterval);
@@ -231,7 +231,7 @@ void loop() {
       Serial.print(F("Sleeping Now for "));
       Serial.print(sleeptime);
       Serial.println(F(" Seconds..."));
-      ESP.deepSleep(sleeptime*1000000);
+      ESP.deepSleep(sleeptime*1000000,WAKE_NO_RFCAL);
     }
   }
 }
