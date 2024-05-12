@@ -15,12 +15,13 @@ cek sketch arduinonya disini [Arduino MQTT Sensor](https://github.com/robertrull
 
 ![AHT10](https://ezmation.com/101-medium_default/aht10-temperature-and-humidity-sensor-i2c.jpg)
 
-Buat Wiringnya gini : 
+Biar fitur deep sleep bisa berjalan lancar, pastiin pada esp01s Pin reset ini tersambung dengan pin gpio 16 biar nanti ketika habis waktu deep sleepnya esp01s bisa bangun terus ngirim data sensor lagi
+![image2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/f6bc99c0-6d6c-42e1-a3a7-b7baf7d3ec35) 
+
+Buat Wiring keseluruhannya gini : 
 
 ![image](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/c16bbd88-71eb-4100-9b8f-4f677045fa3a)
 
-Biar fitur deep sleep bisa berjalan lancar, pastiin pada esp01s Pin reset ini tersambung dengan pin gpio 16 biar nanti ketika habis waktu deep sleepnya esp01s bisa bangun terus ngirim data sensor lagi
-![image2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/f6bc99c0-6d6c-42e1-a3a7-b7baf7d3ec35) 
 
 jadinya kira" gini sebelum masuk case 3d print :
 
