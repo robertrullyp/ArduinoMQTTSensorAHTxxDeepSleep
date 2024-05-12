@@ -85,7 +85,28 @@ buat topic availabilitynya kalau ada di [PubTopic]/status payloadnya akan ngirim
 
 ## Demo
 
-Update Soon....
+Integrasi dengan Home Assistant :
+
+configuration yaml kira" contohnya gini :
+
+    - sensor:
+      - name: "esp01s temperature"
+        unique_id: esp01s_mqtt_temperature
+        state_topic: "usertest/state/sensors/temperature"
+        # availability_topic : "usertest/status"
+        state_class: measurement
+        device_class: "temperature"
+      
+      - name: "esp01s humidity"
+        unique_id: esp01s_mqtt_humidity
+        state_topic: "usertest/state/sensors/humidity"
+        # availability_topic : "usertest/status"
+        state_class: measurement
+        device_class: "humidity"
+
+![photo_2024-05-12_15-09-02](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/f78976de-d4cd-4d7a-a4a0-25eeff3e9049)
+
+
 
 ## Authors
 
