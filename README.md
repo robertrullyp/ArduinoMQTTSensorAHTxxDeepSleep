@@ -17,7 +17,10 @@ cek sketch arduinonya disini [Arduino MQTT Sensor](https://github.com/robertrull
 
 Buat Wiringnya gini : 
 
-![Capture2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/e8d306b6-93ad-4c8d-920c-a396d90eb281)
+![image](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/c16bbd88-71eb-4100-9b8f-4f677045fa3a)
+
+Biar fitur deep sleep bisa berjalan lancar, pastiin pada esp01s Pin reset ini tersambung dengan pin gpio 16 biar nanti ketika habis waktu deep sleepnya esp01s bisa bangun terus ngirim data sensor lagi
+![image2](https://github.com/robertrullyp/ArduinoMQTTSensorAHTxxDeepSleep/assets/12167355/f6bc99c0-6d6c-42e1-a3a7-b7baf7d3ec35) 
 
 jadinya kira" gini sebelum masuk case 3d print :
 
