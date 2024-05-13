@@ -78,9 +78,9 @@ kalau buat [SubTopic]/cmd jangan di retain, kalau di retain nanti device bakalan
 buat nilai sensornya ada di topic [PubTopic]/sensors/temperature dan [PubTopic]/sensors/humidity
 
 kalau parameter deep sleep yang lagi running di device nanti ada di topic:
-[PubTopic]/sleeptime
-[PubTopic]/sleepmode
-[PubTopic]/sleepinterval
+    [PubTopic]/sleeptime
+    [PubTopic]/sleepmode
+    [PubTopic]/sleepinterval
 
 buat topic availabilitynya kalau ada di [PubTopic]/status payloadnya akan ngirim status perangkat online/offline jadi kalau lagi di beroperasi device bakalan ngirim status online, ketika offline artinya device lagi deep sleep atau mungkin device kehilangan koneksi kalau lebih dari interval yang tentukan.
 
