@@ -78,6 +78,7 @@ kalau buat [SubTopic]/cmd jangan di retain, kalau di retain nanti device bakalan
 buat nilai sensornya ada di topic [PubTopic]/sensors/temperature dan [PubTopic]/sensors/humidity
 
 kalau parameter deep sleep yang lagi running di device nanti ada di topic:
+
     [PubTopic]/sleeptime
     [PubTopic]/sleepmode
     [PubTopic]/sleepinterval
