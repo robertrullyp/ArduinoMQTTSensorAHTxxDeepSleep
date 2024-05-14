@@ -21,6 +21,7 @@ unsigned long long sleepinterval = 2;
 unsigned int sleeptime = 60;
 bool sleepmode = true;
 
+#define USE_SSL/TLS
 const char* ssid = "wifi_ssid";
 const char* password = "wifi_password";
 const char* user = "user_mqtt";
@@ -71,7 +72,11 @@ String SubTopic = "user_mqtt/set";
   const static char fingerprint[] PROGMEM = "AA D4 06 67 05 F2 D3 2E DD 91 76 6F BE D5 FB EC 0A 34 C3 BE"; //SHA1 HiveMQ
 #endif
 
+#ifdef USE_SSL/TLS
 WiFiClientSecure  espClient;
+#else
+WiFiClient  espClient;
+#endif
 PubSubClient client(espClient);
 AHTxx aht10(AHTXX_ADDRESS_X38, AHT1x_SENSOR);
 
@@ -148,6 +153,8 @@ void setup() {
     delay(5000);
   }
   Serial.println(F("AHT10 OK"));
+
+#ifdef USE_SSL/TLS
 #if defined(ESP32)
   if (mqtt_server=="192.168.1.93") espClient.setInsecure();
   else espClient.setCACert(test_root_ca);
@@ -156,6 +163,9 @@ void setup() {
   // espClient.setInsecure();
   espClient.setFingerprint(fingerprint);
   Serial.print(fingerprint);
+#endif
+#else
+  espClient.setInsecure();
 #endif
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
