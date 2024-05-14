@@ -164,8 +164,6 @@ void setup() {
   espClient.setFingerprint(fingerprint);
   Serial.print(fingerprint);
 #endif
-#else
-  espClient.setInsecure();
 #endif
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
