@@ -44,6 +44,7 @@ Buat library tambahan yang perlu diinstal :
 
 rubah sendiri sesuaikn parameternya dengan parameter kalian :
 
+    #define USE_SSL/TLS
     const char* ssid = "wifi_ssid";
     const char* password = "wifi_password";
     const char* user = "user_mqtt";
@@ -53,6 +54,8 @@ rubah sendiri sesuaikn parameternya dengan parameter kalian :
     
     String PubTopic = "user_mqtt/state";
     String SubTopic = "user_mqtt/set";
+
+di bagian #define USE_SSL/TLS jadiin comment aja kalau koneksi gak pengen pake SSL/TLS, misal mau pake buat konek ke server mqtt lokal punya sendiri.
 
 ssid dan password isi dengan ssid dan password buat device connect ke wifi. Untuk yg lainnya adalah parameter buat connect ke Server MQTT. udah ditest pake server [hivemq cloud](https://console.hivemq.cloud) juga kok
 
